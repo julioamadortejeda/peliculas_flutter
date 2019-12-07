@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 //Custom imports
 import 'package:peliculas_tutorial/src/pages/home_page.dart';
+import 'package:peliculas_tutorial/src/pages/pelicula_detail.dart';
 
 void main() {
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
@@ -18,7 +19,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Peliculas',
       initialRoute: '/',
-      routes: {'/': (BuildContext context) => HomePage()},
+      routes: {
+        '/': (BuildContext context) => HomePage(),
+        'detail': (BuildContext context) => PeliculaDetail()
+      },
     );
   }
 }
