@@ -14,6 +14,7 @@ class Peliculas {
 }
 
 class Pelicula {
+  String uniqueId;
   int voteCount;
   int id;
   bool video;
@@ -76,7 +77,7 @@ class Pelicula {
 
    getBackgroundIMG() {
 
-    if (posterPath == null) {
+    if (backdropPath == null) {
       return 'https://www.scott-sports.com/_ui/responsive/common/images/no-product-image-available.png';
     } else {
       return 'https://image.tmdb.org/t/p/w500/$backdropPath';
